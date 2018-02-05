@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1517836183 source:c:\source\romanlazunin\c_examples\aoc_d1_p2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

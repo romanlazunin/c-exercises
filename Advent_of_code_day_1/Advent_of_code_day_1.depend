@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1517835662 source:c:\source\romanlazunin\c_examples\advent_of_code_day_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
