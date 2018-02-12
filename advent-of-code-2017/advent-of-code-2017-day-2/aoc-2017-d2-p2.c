@@ -8,13 +8,11 @@
 #define MAX_COL 100
 #define DELIMITERS " \t"
 
-void init_matrix(int matrix[][]);
-
 main(void) {
 	printf(NAME);
 
-	// char filename[] = "p1-input.txt";
-	char filename[] = "p2-test-input-1.txt";
+	// char filename[] = "p2-test-input-1.txt";
+	char filename[] = "p1-input.txt";
 
 	printf("Input file: %s\n", filename);
 
@@ -24,6 +22,9 @@ main(void) {
 			matrix[i][j] = INT_MIN;
 		}
 	}
+
+	char str[MAX_COL];
+	char buf[MAX_ROW];
 
 	FILE *file;
 	file = fopen(filename, "r");
@@ -46,6 +47,11 @@ main(void) {
 		return 1;
 	}
 	fclose(file);
+
+	int sum = 0;
+	sum = get_sum(matrix);
+	
+	printf("\nThe sum is: %d", sum);
 
 	return 0;
 }
